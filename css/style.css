@@ -1,0 +1,578 @@
+/**** Google Font Support ****/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Source+Sans+3:wght@400;700&display=swap');
+/**** End Google Font Support ****/
+
+/**** Resets ****/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #0D0D0D;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+a{
+    color: #0D0D0D;
+    text-decoration: none;
+}
+p{
+    line-height: 1.6em;
+}
+b, strong{
+    font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.32rem;
+}
+h4{
+    font-size: 1rem;
+}
+h5{
+    font-size: 0.8rem;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 767px) {
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+}
+/**** End Resets ****/
+
+/**** Font Colors ****/
+.white{
+    color: #FFFFFF;
+}
+.red{
+    color: #CC0000;
+}
+.black{
+    color: #0D0D0D
+}
+/**** End Font Colors ****/
+
+/**** Background Colors ****/
+.bg-white{
+    background-color: #FFFFFF;
+}
+.bg-red{
+    background-color: #CC0000;
+}
+.bg-black{
+    background-color: #0D0D0D;
+}
+.bg-gray{
+    background-color: #f3f3f3;
+}
+/**** End Background Colors ****/
+
+/**** Button Styles ****/
+a.btn,a.btn:visited,button,button:visited{
+    display: inline-block;
+    margin: 10px auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Source Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-shadow: 0px 5px 8px rgba(20, 20, 20, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+a.btn:hover,button:hover{
+    transform: translateY(-2px);
+}
+a.btn.large{
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+a.btn.small{
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+.round{
+    border-radius: 50px!important;
+} 
+/**** End Button Styles ****/
+
+
+#site_container{
+    height: 100vh;
+}
+section{
+    padding: 60px 0;
+}
+.wrapper{
+    padding: 0px 25px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0px auto;
+}
+/**** Tower Hero Section ****/
+.tower-hero{
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url('../images/rice-eccles-stadium-tower-hero.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.tower-hero-content{
+    position: relative;
+    margin: 80px auto 80px auto;
+    text-align: center;
+}
+.tower-hero-content img{ 
+    max-width: 170px;
+    margin-bottom: 20px;
+}
+.tower-hero-content h1{
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.tower-hero-content .subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+
+    .tower-hero-content  {
+        margin: 0px auto 0px auto;
+    }
+    .tower-hero-content img { 
+        max-width: 120px;
+        margin-bottom: 20px;
+    }
+    .tower-hero-content .subtitle{
+        font-size: 1.125rem;
+    }
+
+}
+/**** End Tower Hero Section ****/
+
+
+/**** Events Section ****/
+.events-content{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-bottom: 40px;
+    gap: 60px;
+}
+
+.events-content .events-img{
+    flex: 1 0 42%;
+    margin-bottom: 30px;
+}
+.events-content .odd .events-img{
+    padding-left: 40px;
+}
+@media only screen and (max-width: 767px) {
+
+    .events-content{
+        flex-flow: column nowrap;
+        gap: 0px;
+    }
+    .odd{
+        flex-flow: column-reverse nowrap;
+    }
+
+}
+/**** End Events Section ****/
+
+
+/**** Services Section ****/
+.services-section{
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url('../images/review-services-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.services-content{
+    position: relative;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    max-width: 1080px;
+    width: 100%;
+}
+.services-content-header{
+    margin-bottom: 40px;
+}
+.services-content-icons{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.services-icons-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services-icon-img img{
+    height: 80px;
+    margin-bottom: 20px;
+    width: auto;
+}
+.services-icon-text{
+    font-weight: 600;
+}
+@media only screen and (max-width: 900px) {
+
+    .services-icon-img img {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+}
+/**** End Services Section ****/
+
+
+/**** Room Cards Section ****/
+.room-cards-content{
+    position: relative;
+    margin: 25px auto 50px auto;
+}
+.room-cards-content h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.room-cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    
+}
+.room-card{
+    flex: 1 0 300px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 8px rgba(20, 20, 20, 0.2);
+    transition: transform 0.3s;
+}
+.room-card:hover{
+    transform: translateY(-2px);
+}
+.room-card-header-img{
+    position: relative;
+    width: 100%;
+    height: 175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+}
+.room-card-body{
+    text-align: left;
+    min-height: 340px;
+    padding: 20px 20px 0px;
+}
+.room-card-body p{
+    font-size: 1rem;
+    margin: 8px 0px;
+}
+.room-card-title{
+    font-size: 18px;
+    font-weight: 800;
+}
+.room-card-stats li{
+    padding: 3px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.room-card-stats li:after{
+    content:'';
+    display: block;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 3px 0px;
+}
+.room-card-stats li:last-child:after{
+    display: none;
+}
+.room-card-cta{
+    padding: 0px 20px 20px;
+}
+
+@media screen and (min-width: 40em) {
+
+    .room-card {
+       max-width: calc(50% -  1em);
+    }
+
+}
+
+@media screen and (min-width: 60em) {
+
+    .room-card {
+        max-width: calc(33% - 1em);
+    }
+
+}
+/**** End Room Cards Section ****/
+
+
+
+/**** Begin Rooms Page ****/
+
+
+/**** Room Carousel Section ****/
+section.room-carousel-section {
+    padding: 25px 0;
+}
+.room-carousel-wrapper {
+    max-width: 1080px;
+    height: 400px;
+    position: relative;
+    margin: 0px auto 0px;
+}
+.owl-carousel{
+    margin-bottom: 100px;
+}
+.owl-carousel .item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+	position: absolute;
+	top: 45%;
+}
+
+.owl-carousel .owl-prev {
+	left: 30px;
+}
+
+.owl-carousel .owl-next {
+	right: 30px;
+}
+
+.owl-carousel .owl-dots{
+    display: none;
+}
+.owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot{
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    height: 50px;
+    width: 50px;
+}
+.owl-carousel .owl-nav .owl-prev:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
+.owl-carousel .owl-nav .owl-next:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+@media only screen and (max-width: 767px) {
+    .owl-carousel .item img{
+        border-radius: 0px;
+    }
+    .owl-carousel .owl-prev{
+        left: 10px;
+    }
+    .owl-carousel .owl-next {
+        right: 10px;
+    }
+    .owl-carousel .owl-nav .owl-prev:before, .owl-carousel .owl-nav .owl-next:after{
+        font-size: 1.4rem;
+    }
+}
+/**** End Room Carousel Section ****/
+
+/**** Room Content Section ****/
+section.room-content-section {
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
+.room-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.room-content .room-text{
+    flex: 1 0 70%;
+    border-right: 1px solid #0D0D0D;
+    padding: 0px 50px 0px 0px;
+    width: auto;
+}
+.room-content .room-map{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0px 0px 0px 50px;
+}
+@media only screen and (max-width: 767px) {
+
+    .room-content{
+        flex-flow: column nowrap;
+    }
+    .room-content .room-text{
+       border: none;
+       padding: 0px;
+    }
+    .room-content .room-map{
+       padding: 0px;
+    }
+
+}
+.room-details-content{
+    margin: 0px auto;
+    text-align: center;
+}
+.room-details-content h2{
+    margin-bottom: 30px;
+}
+.room-details-stats{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    color:#CC0000;
+    font-weight: 800;
+    
+}
+.room-details-stats li{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 auto;
+    position: relative;
+    padding: 10px 0px;
+    
+}
+.room-details-stats li:after{
+    content:'';
+    border: 1px solid #c5c5c5;
+    position: absolute;
+    height: 50px;
+    z-index: 2;
+    right: 0px;
+    top: 10px;
+}
+.room-details-stats li:last-child:after{
+    display: none;
+}
+.room-details-stats span{
+    display: block;
+}
+.room-details-stats .small{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+
+    .room-details-stats li:after{
+        border: none;
+    }
+
+}
+/**** End Room Content Section ****/
+
+/**** Room CTA Section ****/
+.room-cta-content {
+    text-align: center;
+    padding: 0px 100px;
+}
+.room-cta-content h1{
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+
+    .room-cta-content {
+        padding: 0px;
+    }
+    .room-cta-content h1{
+        font-size: 1.8rem;
+    }
+
+}
+/**** Room CTA Section ****/
+
+/**** Modal ****/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #0D0D0D;
+    padding: 25px;
+    position:fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.modal-content{
+   background-color: #FFFFFF;
+   border: 2px solid #0D0D0D;
+   border-radius: 15px;
+   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+   padding: 60px;
+   width: 50%;
+   position: absolute;
+   left: 25%;
+   visibility: hidden;
+   text-align: center;
+}
+
+.modal-overlay.active, .modal-content.active{
+    visibility: visible;
+}
+@media only screen and (max-width: 767px) {
+    
+    .modal-content{
+        padding: 10px;
+        width: 90%;
+        left: 5%;
+    }
+
+}
+/**** End Modal ****/
